@@ -1,0 +1,29 @@
+{
+	"products" : [
+		{
+			"name" : "Zine",
+			"price" : "15.99",
+			"options" : [
+			],
+			"image" : "https://nieves.rokfor.ch/asset/1400/16737/1535633653_ari.jpg-preview1.jpg",
+			"description" : "This is a zine from some author."
+		},
+		{
+			"name" : "Poster",
+			"price" : "11.99",
+			"options" : [
+			],
+			"image" : "https://nieves.rokfor.ch/asset/707/5577/aaron2cover.jpg-preview1.jpg",
+			"description" : "This is a poster of some artwork."
+		},
+		{
+			"name" : "Shirt",
+			"price" : "24.99",
+			"options" : [
+				{ "Size" : "Small,Medium,Large" }
+			],
+			"image" : "https://assets.bigcartel.com/product_images/204780689/redboxteewebiste.png",
+			"description" : "This is how I make money."
+		}
+	]
+}
