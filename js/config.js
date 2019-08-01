@@ -74,7 +74,7 @@ $(function() {
 	simpleStore.init({
 
 		// brand can be text or image URL
-		brand : "a very orange room",
+		brand : "OBELISK",
 
 		// numder of products per row (accepts 1, 2 or 3)
 		numColumns : 3,
