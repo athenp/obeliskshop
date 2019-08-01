@@ -4,7 +4,7 @@
 			"name" : "Anti-Bike Theft",
 			"price" : "15.00",
 			"options" : [
-				{ "Size" : "Small,Medium,Large" },
+				{ "Size" : "Small,Medium,Large" }
 			],
 			"image" : "./pics/BIKESHIRTPIC.png",
 			"description" : "Fund my new bike, since I had the last one stolen. Printed on Gildan blanks."
@@ -33,7 +33,7 @@
 			"name" : "Redbox",
 			"price" : "20.00",
 			"options" : [
-				{ "Size" : "Small,Medium,Large" },
+				{ "Size" : "Small,Medium,Large" }
 			],
 			"image" : "./pics/REDBOXPIC.png",
 			"description" : "Part of the Grocery Store Checkout collection. Limited to 20 shirts. Printed on Gildan Blanks."
