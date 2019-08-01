@@ -4,18 +4,19 @@
 			"name" : "Anti-Bike Theft",
 			"price" : "15.00",
 			"options" : [
-				{ "Size" : "Small,Medium,Large" }
+				{ "Size" : "Small,Medium,Large" },
 			],
-			"image" : "./pic/BIKESHIRTPIC.png",
+			"image" : "./pics/BIKESHIRTPIC.png",
 			"description" : "Fund my new bike, since I had the last one stolen. Printed on Gildan blanks."
 		},
 		{
 			"name" : "Liber-tee Short Sleeve",
 			"price" : "25.00",
 			"options" : [
-				{ "Size" : "Small,Medium,Large" }
+				{ "Size" : "Small,Medium,Large" },
+				{ "Color" : "White,Black" }
 			],
-			"image" : "./pic/LIBERTEEPIC.png",
+			"image" : "./pics/LIBERTEEPIC.png",
 			"description" : "Support the plight of marginalized people. 20% of all proceeds from this shirt are donated to charity. Printed on Gildan blanks."
 		},
 		{
@@ -25,16 +26,16 @@
 				{ "Size" : "Small,Medium,Large" },
 				{ "Color" : "White,Black" }
 			],
-			"image" : "./pic/LIBERTEEPIC.png",
+			"image" : "./pics/LIBERTEEPIC.png",
 			"description" : "Support the plight of marginalized people. 20% of all proceeds from this shirt are donated to charity. Printed on Gildan blanks."
 		},
 {
 			"name" : "Redbox",
 			"price" : "20.00",
 			"options" : [
-				{ "Size" : "Small,Medium,Large" }
+				{ "Size" : "Small,Medium,Large" },
 			],
-			"image" : "./pic/REDBOXPIC.png",
+			"image" : "./pics/REDBOXPIC.png",
 			"description" : "Part of the Grocery Store Checkout collection. Limited to 20 shirts. Printed on Gildan Blanks."
 		}
 	]
