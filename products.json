@@ -1,29 +1,42 @@
 {
 	"products" : [
 		{
-			"name" : "Zine",
-			"price" : "15.99",
+			"name" : "Anti-Bike Theft",
+			"price" : "15.00",
 			"options" : [
+				{ "Size" : "Small,Medium,Large" }
 			],
 			"image" : "https://nieves.rokfor.ch/asset/1400/16737/1535633653_ari.jpg-preview1.jpg",
-			"description" : "This is a zine from some author."
+			"description" : "Fund my new bike, since I had the last one stolen. Printed on Gildan blanks."
 		},
 		{
-			"name" : "Poster",
-			"price" : "11.99",
+			"name" : "Liber-tee Short Sleeve",
+			"price" : "25.00",
 			"options" : [
+				{ "Size" : "Small,Medium,Large" }
+				{ "Color" : "White,Black" }
 			],
 			"image" : "https://nieves.rokfor.ch/asset/707/5577/aaron2cover.jpg-preview1.jpg",
-			"description" : "This is a poster of some artwork."
+			"description" : "Support the plight of marginalized people. 20% of all proceeds from this shirt are donated to charity. Printed on Gildan blanks."
 		},
 		{
-			"name" : "Shirt",
-			"price" : "24.99",
+			"name" : "Liber-tee Long Sleeve",
+			"price" : "30.00",
+			"options" : [
+				{ "Size" : "Small,Medium,Large" }
+				{ "Color" : "White,Black" }
+			],
+			"image" : "https://assets.bigcartel.com/product_images/204780689/redboxteewebiste.png",
+			"description" : "Support the plight of marginalized people. 20% of all proceeds from this shirt are donated to charity. Printed on Gildan blanks."
+		},
+{
+			"name" : "Redbox",
+			"price" : "20.00",
 			"options" : [
 				{ "Size" : "Small,Medium,Large" }
 			],
 			"image" : "https://assets.bigcartel.com/product_images/204780689/redboxteewebiste.png",
-			"description" : "This is how I make money."
+			"description" : "Part of the Grocery Store Checkout collection. Limited to 20 shirts. Printed on Gildan Blanks."
 		}
 	]
 }
