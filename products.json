@@ -14,7 +14,6 @@
 			"price" : "25.00",
 			"options" : [
 				{ "Size" : "Small,Medium,Large" }
-				{ "Color" : "White,Black" }
 			],
 			"image" : "https://nieves.rokfor.ch/asset/707/5577/aaron2cover.jpg-preview1.jpg",
 			"description" : "Support the plight of marginalized people. 20% of all proceeds from this shirt are donated to charity. Printed on Gildan blanks."
@@ -24,7 +23,6 @@
 			"price" : "30.00",
 			"options" : [
 				{ "Size" : "Small,Medium,Large" }
-				{ "Color" : "White,Black" }
 			],
 			"image" : "https://assets.bigcartel.com/product_images/204780689/redboxteewebiste.png",
 			"description" : "Support the plight of marginalized people. 20% of all proceeds from this shirt are donated to charity. Printed on Gildan blanks."
