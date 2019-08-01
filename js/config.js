@@ -17,10 +17,9 @@ $(function() {
 	    cartStyle: "div",
 
 	    // how simpleCart should checkout, see the checkout reference for more info
-        // sjcatron@hotmail.com
 	    checkout: {
 	        type: "PayPal" ,
-	        email: "example@example.com"
+	        email: "athenkai@hotmail.com"
 	    },
 
 	    // set the currency, see the currency reference for more info
