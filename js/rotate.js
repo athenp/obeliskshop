@@ -2,20 +2,11 @@ var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
 var renderer = new THREE.WebGLRenderer();
-renderer.setClearColor( 0xffffff );
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
-var loader = new THREE.CubeTextureLoader();
-loader.setPath( './' );
-
-var textureCube = loader.load( [
-                                '1.png', '2.png',
-                                '3.png', '4.png',
-                                '5.png', '6.png'
-                                ] );
-
-var material = new THREE.MeshBasicMaterial( { color: 0xffffff, envMap: textureCube } );
+var geometry = new THREE.BoxGeometry( 1, 3, 1 );
+var material = new THREE.MeshBasicMaterial( { color: 0xffffff } );
 var cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
