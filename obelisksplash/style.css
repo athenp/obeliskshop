@@ -1,0 +1,72 @@
+body {
+    background-color: #ffffff;
+    
+    -webkit-perspective: 1500px;
+    height: 100vh;
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    
+    transform: rotateX(300deg) rotateY(-300deg);
+}
+
+div.face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+}
+
+div.face-cover {
+    width: 150px;
+    height: 150px;
+    background-image: url(obelfront.png);
+    
+    transform: translateX(-50%) translateY(-50%) translateZ(75px);
+}
+
+div.face-side {
+    width: 150px;
+    height: 150px;
+    background-image: url(obelleft.png);
+    
+    transform: translateX(-50%) translateY(-50%) rotateY(90deg) translateZ(75px);
+}
+
+div.face-spine {
+    width: 150px;
+    height: 150px;
+    background-image: url(obelback.png);
+    
+    transform: translateX(-50%) translateY(-50%) rotateY(-90deg) translateZ(75px);
+}
+
+div.face-top {
+    width: 150px;
+    height: 150px;
+    background-image: url(obeltop.png);
+    
+    transform: translateX(-50%) translateY(-50%) rotateX(90deg) translateZ(75px);
+}
+
+div.face-bottom {
+    width: 150px;
+    height: 150px;
+    background-image: url(obelbottom.png);
+    
+    transform: translateX(-50%) translateY(-50%) rotateX(-90deg) translateZ(75px);
+}
+
+div.face-back {
+    width: 150px;
+    height: 150px;
+    background-image: url(obelback.png);
+    
+    transform: translateX(-50%) translateY(-50%) rotatey(-180deg) translateZ(75px);
+}
