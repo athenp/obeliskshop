@@ -7,7 +7,7 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
 var loader = new THREE.CubeTextureLoader();
-loader.setPath( '/splashimages' );
+loader.setPath( './' );
 
 var textureCube = loader.load( [
                                 '1.png', '2.png',
