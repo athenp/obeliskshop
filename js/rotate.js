@@ -1,13 +1,13 @@
 var scene = new THREE.Scene();
-scene.background = new THREE.Color( 0xff0000 );
 var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
 var renderer = new THREE.WebGLRenderer();
+renderer.setClearColor( 0xffffff );
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
 var loader = new THREE.CubeTextureLoader();
-loader.setPath( './' );
+loader.setPath( '/splashimages/' );
 
 var textureCube = loader.load( [
                                 '1.png', '2.png',
