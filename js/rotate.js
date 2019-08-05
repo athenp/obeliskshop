@@ -5,8 +5,16 @@ var renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
-var geometry = new THREE.BoxGeometry( 1, 3, 1 );
-var material = new THREE.MeshBasicMaterial( { color: 0xffffff } );
+var loader = new THREE.CubeTextureLoader();
+loader.setPath( './' );
+
+var textureCube = loader.load( [
+                                '1.png', '2.png',
+                                '3.png', '4.png',
+                                '5.png', '6.png'
+                                ] );
+
+var material = new THREE.MeshBasicMaterial( { color: 0xffffff, envMap: textureCube } );
 var cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
