@@ -7,12 +7,12 @@ document.body.appendChild( renderer.domElement );
 
 var textureLoader = new THREE.TextureLoader();
 
-var texture0 = textureLoader.load( './obelback.png' );
-var texture1 = textureLoader.load( './obelbottom.png' );
-var texture2 = textureLoader.load( './obelfront.png' );
-var texture3 = textureLoader.load( './obelleft.png' );
-var texture4 = textureLoader.load( './obelright.png' );
-var texture5 = textureLoader.load( './obeltop.png' );
+var texture0 = textureLoader.load( './splash/obelback.png' );
+var texture1 = textureLoader.load( './splash/obelbottom.png' );
+var texture2 = textureLoader.load( './splash/obelfront.png' );
+var texture3 = textureLoader.load( './splash/obelleft.png' );
+var texture4 = textureLoader.load( './splash/obelright.png' );
+var texture5 = textureLoader.load( './splash/obeltop.png' );
 
 var materials = [
                  new THREE.MeshBasicMaterial( { map: texture0 } ),
