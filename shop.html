@@ -29,9 +29,7 @@
 </head>
 <body>
     
-    <div id='loading' style='position:fixed; height:100%; width:100%; overflow:hidden; top:0; left:0;background-color: #fff;
-        z-index: 99;
-        text-align: center;'>Loading, please wait.</div>
+    <div id="container" style='width: 100%; height: 100%;'></div>
     
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -146,14 +144,16 @@
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="js/simpleCart.min.js"></script>
 <script src="js/simpleStore.min.js"></script>
+<script src="./js/three.min.js"></script>
+<script src="./js/rotate.js"></script>
 <script language="javascript" type="text/javascript">
     $(window).on('load', function(){
                  setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
                  });
                  function removeLoader(){
-                     $( "#loading" ).fadeOut(500, function() {
+                     $( "#container" ).fadeOut(500, function() {
                                                 // fadeOut complete. Remove the loading div
-                                                $( "#loading" ).remove(); //makes page more lightweight
+                                                $( "#container" ).remove(); //makes page more lightweight
                                                 });
                  }
     </script>
