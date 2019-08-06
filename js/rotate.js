@@ -15,7 +15,7 @@ var material = new THREE.MeshBasicMaterial( {color: 0xffff00} );
 var cylinder = new THREE.Mesh( geometry, material );
 cylinder.rotateX( Math.PI / 2 );
 scene.add( cylinder );
-cylinder.position.set(0, 0, 1);
+cylinder.position.set(0, 1, 0);
 
 camera.position.z = 5;
 
