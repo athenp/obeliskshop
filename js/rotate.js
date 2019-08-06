@@ -2,7 +2,7 @@ var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
 var renderer = new THREE.WebGLRenderer();
-var container = document.getElementById('.canvas');
+var container = document.getElementByClassName('canvas');
 renderer.setSize( window.innerWidth, window.innerHeight );
 renderer.setClearColor((Math.random() * 0xffffff),1);
 container.appendChild(renderer.domElement);
