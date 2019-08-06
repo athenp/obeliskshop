@@ -147,9 +147,15 @@
 <script src="js/simpleCart.min.js"></script>
 <script src="js/simpleStore.min.js"></script>
 <script language="javascript" type="text/javascript">
-    $(window).load(function() {
-                   $('#loading').hide();
-                   });
+    $(window).on('load', function(){
+                 setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+                 });
+                 function removeLoader(){
+                     $( "#loading" ).fadeOut(500, function() {
+                                                // fadeOut complete. Remove the loading div
+                                                $( "#loading" ).remove(); //makes page more lightweight
+                                                });
+                 }
     </script>
 <script src="js/config.js"></script>
 
