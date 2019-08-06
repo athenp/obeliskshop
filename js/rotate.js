@@ -10,11 +10,11 @@ var material = new THREE.MeshBasicMaterial( { color: 0xffffff } );
 var cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
-var geometry = new THREE.CircleGeometry( .5, 32 );
+var geometry = new THREE.CircleGeometry( 2, 32 );
 var material = new THREE.MeshBasicMaterial( { color: 0xffff00 } );
 var circle = new THREE.Mesh( geometry, material );
 scene.add( circle );
-circle.position.set(100, 100, 100);
+circle.position.set(1, 1, 3);
 
 camera.position.z = 5;
 
