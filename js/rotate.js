@@ -2,9 +2,10 @@ var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
 var renderer = new THREE.WebGLRenderer();
-renderer.setSize( window.innerWidth, window.innerHeight );
+var container = document.getElementById('canvas');
+renderer.setSize( container.innerWidth, container.innerHeight );
 renderer.setClearColor((Math.random() * 0xffffff),1);
-document.body.appendChild( renderer.domElement );
+container.appendChild(renderer.domElement);
 
 var geometry = new THREE.BoxGeometry( 1, 3, 1 );
 var material = new THREE.MeshBasicMaterial( { color: (Math.random() * 0xffffff) } );
