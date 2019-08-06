@@ -10,7 +10,7 @@ var material = new THREE.MeshBasicMaterial( { color: 0xffffff } );
 var cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
-var geometry = new THREE.CylinderGeometry( 5, 5, 20, 32 );
+var geometry = new THREE.CylinderGeometry( 1, 1, 4, 32 );
 var material = new THREE.MeshBasicMaterial( {color: 0xffff00} );
 var cylinder = new THREE.Mesh( geometry, material );
 scene.add( cylinder );
