@@ -11,7 +11,7 @@ var cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
 var geometry = new THREE.CylinderGeometry( .3, .3, 1.05, 32 );
-var material = new THREE.MeshBasicMaterial( {color: 0xffff00} );
+var material = new THREE.MeshBasicMaterial( {color: 0xffffff} );
 var cylinder = new THREE.Mesh( geometry, material );
 cylinder.rotateX( Math.PI / 2 );
 scene.add( cylinder );
