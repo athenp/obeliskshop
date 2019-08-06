@@ -10,11 +10,10 @@ var material = new THREE.MeshBasicMaterial( { color: 0xffffff } );
 var cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
-var geometry = new THREE.CircleGeometry( .5, 32 );
-var material = new THREE.MeshBasicMaterial( { color: 0xffff00 } );
-var circle = new THREE.Mesh( geometry, material );
-scene.add( circle );
-circle.position.set(3, 1, 1);
+var geometry = new THREE.CylinderGeometry( 5, 5, 20, 32 );
+var material = new THREE.MeshBasicMaterial( {color: 0xffff00} );
+var cylinder = new THREE.Mesh( geometry, material );
+scene.add( cylinder );
 
 camera.position.z = 5;
 
@@ -22,8 +21,8 @@ function render() {
     requestAnimationFrame( render );
     cube.rotation.x += 0.0;
     cube.rotation.y += 0.05;
-    circle.rotation.x += 0.0;
-    circle.rotation.y += 0.05;
+    cylinder.rotation.x += 0.0;
+    cylinder.rotation.y += 0.05;
     renderer.render( scene, camera );
 }
 render();
