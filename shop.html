@@ -28,7 +28,9 @@
  <!-- Colors EA8C55 1B1B1E DB7C26 -->
 </head>
 <body>
-
+    
+    <div id='loading_wrap' style='position:fixed; height:100%; width:100%; overflow:hidden; top:0; left:0;'>Loading, please wait.</div>
+    
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container simpleStore">
@@ -142,7 +144,8 @@
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="js/simpleCart.min.js"></script>
 <script src="js/simpleStore.min.js"></script>
-
+<script type="text/javascript">$('#loading_wrap').remove();</script>
+<script src="js/jquery-3.4.0.min.js"></script>
 <script src="js/config.js"></script>
 
 </html>
