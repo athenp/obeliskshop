@@ -1,0 +1,44 @@
+{
+	"metadata": {
+		"version": 4.5,
+		"type": "Object",
+		"generator": "Object3D.toJSON"
+	},
+	"geometries": [
+		{
+			"uuid": "3EC5D008-55F0-498B-8041-E743D5C3EA22",
+			"type": "CircleBufferGeometry",
+			"radius": 1,
+			"segments": 50,
+			"thetaStart": 0,
+			"thetaLength": 6.283185
+		}],
+	"materials": [
+		{
+			"uuid": "41C6C28E-7B50-4188-9D1B-08E926793BF2",
+			"type": "MeshStandardMaterial",
+			"color": 16777215,
+			"roughness": 0.5,
+			"metalness": 0.5,
+			"emissive": 0,
+			"depthFunc": 3,
+			"depthTest": true,
+			"depthWrite": true,
+			"stencilWrite": false,
+			"stencilFunc": 519,
+			"stencilRef": 0,
+			"stencilMask": 255,
+			"stencilFail": 7680,
+			"stencilZFail": 7680,
+			"stencilZPass": 7680
+		}],
+	"object": {
+		"uuid": "D09BADF3-FCE7-43FF-B56C-0376225EC698",
+		"type": "Mesh",
+		"name": "Circle",
+		"layers": 1,
+		"matrix": [0.3,0,0,0,0,0.3,0,0,0,0,0.3,0,0,0.875,0.507,1],
+		"geometry": "3EC5D008-55F0-498B-8041-E743D5C3EA22",
+		"material": "41C6C28E-7B50-4188-9D1B-08E926793BF2"
+	}
+}

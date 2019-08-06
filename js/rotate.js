@@ -5,17 +5,22 @@ var renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
-var geometry = new THREE.BoxGeometry( 1, 3, 1 );
-var material = new THREE.MeshBasicMaterial( { color: 0xffffff } );
-var cube = new THREE.Mesh( geometry, material );
-scene.add( cube );
+var jsonLoader = new THREE.JSONLoader();
+jsonLoader.load("object.json", addModelToScene);
+
+function addModelToScene(geometry, materials) {
+    var material = new THREE.MeshFaceMaterial(materials);
+    var object = new THREE.Mesh(geometry, material);
+    object.scale.set(10, 10, 10);
+    scene.add(object);
+}
 
 camera.position.z = 5;
 
 function render() {
     requestAnimationFrame( render );
-    cube.rotation.x += 0.0;
-    cube.rotation.y += 0.05;
+    object.rotation.x += 0.0;
+    object.rotation.y += 0.05;
     renderer.render( scene, camera );
 }
 render();
