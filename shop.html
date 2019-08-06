@@ -29,7 +29,7 @@
 </head>
 <body>
     
-    <div id='loading' style='position:fixed; height:100%; width:100%; overflow:hidden; top:0; left:0;background-color: #fff;
+    <div class=".loading" style='position:fixed; height:100%; width:100%; overflow:hidden; top:0; left:0;background-color: #fff;
         z-index: 99;
         text-align: center;'>Loading, please wait.</div>
     
@@ -147,10 +147,9 @@
 <script src="js/simpleCart.min.js"></script>
 <script src="js/simpleStore.min.js"></script>
 <script language="javascript" type="text/javascript">
-    $(window).on('load', function());
-                 function addLoader(){
-                     $( "#loading" ).fadeIn(500);
-                 }
+    $(document).ready(function(){
+                      $('.loading').fadeIn();
+                      });
     </script>
 <script src="js/config.js"></script>
 
