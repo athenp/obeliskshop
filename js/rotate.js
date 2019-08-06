@@ -22,7 +22,7 @@ function render() {
     requestAnimationFrame( render );
     cube.rotation.x += 0.0;
     cube.rotation.y += 0.05;
-    cylinder.rotation.x += 0.0;
+    cylinder.rotation.x += 0.05;
     cylinder.rotation.y += 0.05;
     renderer.render( scene, camera );
 }
