@@ -14,6 +14,7 @@ var geometry = new THREE.CircleGeometry( .5, 32 );
 var material = new THREE.MeshBasicMaterial( { color: 0xffff00 } );
 var circle = new THREE.Mesh( geometry, material );
 scene.add( circle );
+circle.position.set(100, 100, 100);
 
 camera.position.z = 5;
 
