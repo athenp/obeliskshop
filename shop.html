@@ -29,9 +29,9 @@
 </head>
 <body>
     
-    <div class="canvas" style='z-index: 99;margin:0;width:100%;height:100%;top:0;left:0;overflow:hidden;opacity:1;position:relative;'></div>
+    <div id="canvas" style='margin:0;width:100%;height:100%;top:0;left:0;overflow:hidden;opacity:1;position:relative;'></div>
     
-    <div class="primary" style='opacity:1;margin:0;width:100%;height:100%;top:0;left:0;position:absolute;overflow:hidden;'>
+    <div class="primary" style='z-index: 99;opacity:0;margin:0;width:100%;height:100%;top:0;left:0;position:absolute;overflow:hidden;'>
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container simpleStore">
@@ -149,8 +149,8 @@
 <script src="./js/three.min.js"></script>
 <script src="./js/rotate.js"></script>
 <script language="javascript" type="text/javascript">
-    $('.canvas').first().delay(2000).animate({'opacity':'0'},1000);
-    $('.canvas').removeClass('canvas');
+    $('#canvas').first().delay(2000).animate({'opacity':'0'},1000);
+    $('.primarycanvas').first().delay(2000).animate({'opacity':'1'},1000);
     </script>
 <script src="js/config.js"></script>
 
