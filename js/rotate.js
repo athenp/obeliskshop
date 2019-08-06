@@ -9,14 +9,13 @@ var geometry = new THREE.BoxGeometry( 1, 3, 1 );
 var material = new THREE.MeshBasicMaterial( { color: 0xffffff } );
 var cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
-cube.position.set(0, 1, 0);
 
 var geometry = new THREE.CylinderGeometry( .3, .3, 1.05, 32 );
 var material = new THREE.MeshBasicMaterial( {color: 0x000000} );
 var cylinder = new THREE.Mesh( geometry, material );
 cylinder.rotateX( Math.PI / 2 );
 scene.add( cylinder );
-cylinder.position.set(0, 2, 0);
+cylinder.position.set(0, 1, 0);
 
 camera.position.z = 5;
 
