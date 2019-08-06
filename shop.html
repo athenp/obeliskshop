@@ -29,11 +29,9 @@
 </head>
 <body>
     
-    <div class="loading" style='position:fixed; height:100%; width:100%; overflow:hidden; top:0; left:0;background-color: #fff;
-        z-index: 99;
-        text-align: center;opacity:0;'>Loading, please wait.</div>
+    <div id="container" style='margin:0;width:100%;height:100%;top:0;left:0;overflow:hidden;'></div>
     
-    <div class="primary">
+    <div class="primary" style='z-index: 99;opacity:0;'>
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container simpleStore">
@@ -148,8 +146,10 @@
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="js/simpleCart.min.js"></script>
 <script src="js/simpleStore.min.js"></script>
+<script src="./js/three.min.js"></script>
+<script src="./js/rotate.js"></script>
 <script language="javascript" type="text/javascript">
-    $('.loading').first().delay(100).animate({'opacity':'1'},600);
+    $('.primary').first().delay(100).animate({'opacity':'1'},600);
     </script>
 <script src="js/config.js"></script>
 
