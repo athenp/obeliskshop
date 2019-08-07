@@ -37,6 +37,15 @@
 			],
 			"image" : "./pics/REDBOXPIC.png",
 			"description" : "Part of the Grocery Store Checkout collection. Limited to 20 shirts. Printed on Gildan Blanks."
+		},
+{
+			"name" : "Communist Reading Hour",
+			"price" : "20.00",
+			"options" : [
+				{ "Size" : "Small,Medium,Large" }
+			],
+			"image" : "./pics/CRHPIC.png",
+			"description" : "Purchasable version of the free shirt given to Communist Reading Hour members who read 5 books. Proceeds support club operations. Printed on Gildan Blanks."
 		}
 	]
 }
