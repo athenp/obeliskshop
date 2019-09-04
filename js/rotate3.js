@@ -1,5 +1,4 @@
 //camera controls
-
 var Controls = (function(Controls) {
                 "use strict";
                 
@@ -72,7 +71,6 @@ var textureCube = loader.load( [
                                 ] );
 
 //setup
-
 var renderer = new THREE.WebGLRenderer();
 var container = document.getElementById('canvas');
 renderer.setSize( window.innerWidth, window.innerHeight );
@@ -127,7 +125,7 @@ function randomIntFromInterval(min, max) { // min and max included
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-//major geometry
+//major geometry generation
 var rotationRand = (randomIntFromInterval(0,360));
 
 var sizeX = (randomIntFromInterval(20,60));
@@ -137,7 +135,6 @@ var sizeZ = (randomIntFromInterval((sizeY*.2),(sizeY*.5)));
 var box0 = new THREE.BoxGeometry( sizeX, sizeY, sizeZ );
 var material = new THREE.MeshBasicMaterial( { color: (Math.random() * 0xffffff) } );
 var box0 = new THREE.Mesh( box0, material );
-//box0.rotation.z = THREE.Math.degToRad(rotationRand);
 scene.add( box0 );
 box0.position.set(0, 0, (0 + (sizeZ/2)));
 
@@ -147,7 +144,6 @@ var sizeZ2 = (randomIntFromInterval(10, 30));
 
 var posX = (0+(randomIntFromInterval(-sizeX,sizeX)/2));
 var posY = (0+(randomIntFromInterval(-sizeY,sizeY)/2));
-//var posZ = (0+(randomIntFromInterval(0,sizeZ)/2));
 var posZ = (0 + (sizeZ2/2));
 
 var box1 = new THREE.BoxGeometry( sizeX2, sizeY2, sizeZ2 );
@@ -160,9 +156,15 @@ var sizeX3 = (randomIntFromInterval(10, 50));
 var sizeY3 = (randomIntFromInterval(10, 50));
 var sizeZ3 = (randomIntFromInterval(10, 30));
 
-var posX2 = (posX + (randomIntFromInterval(-sizeX2,sizeX2)/2));
-var posY2 = (posY + (randomIntFromInterval(-sizeY2,sizeY2)/2));
-//var posZ2 = (posZ + (randomIntFromInterval(-sizeZ2,sizeZ2)/2));
+var roll1 = (randomIntFromInterval(0, 1));
+
+if (roll1 == 0) {
+    var posX2 = (posX + (randomIntFromInterval(-sizeX,sizeX)/2));
+    var posY2 = (posY + (randomIntFromInterval(-sizeY,sizeY)/2));
+} else if (roll1 == 1) {
+    var posX2 = (posX + (randomIntFromInterval(-sizeX2,sizeX2)/2));
+    var posY2 = (posY + (randomIntFromInterval(-sizeY2,sizeY2)/2));
+}
 var posZ2 = (0 + (sizeZ3/2));
 
 var box2 = new THREE.BoxGeometry( sizeX3, sizeY3, sizeZ3 );
@@ -175,9 +177,18 @@ var sizeX4 = (randomIntFromInterval(10, 50));
 var sizeY4 = (randomIntFromInterval(10, 50));
 var sizeZ4 = (randomIntFromInterval(10, 30));
 
-var posX3 = (posX2 + (randomIntFromInterval(-sizeX3,sizeX3)/2));
-var posY3 = (posY2 + (randomIntFromInterval(-sizeY3,sizeY3)/2));
-//var posZ3 = (posZ2 + (randomIntFromInterval(-sizeZ3,sizeZ3)/2));
+var roll2 = (randomIntFromInterval(0, 2));
+
+if (roll2 == 0) {
+    var posX3 = (posX2 + (randomIntFromInterval(-sizeX,sizeX)/2));
+    var posY3 = (posY2 + (randomIntFromInterval(-sizeY,sizeY)/2));
+} else if (roll2 == 1) {
+    var posX3 = (posX2 + (randomIntFromInterval(-sizeX2,sizeX2)/2));
+    var posY3 = (posY2 + (randomIntFromInterval(-sizeY2,sizeY2)/2));
+} else if (roll2 == 2) {
+    var posX3 = (posX2 + (randomIntFromInterval(-sizeX3,sizeX3)/2));
+    var posY3 = (posY2 + (randomIntFromInterval(-sizeY3,sizeY3)/2));
+}
 var posZ3 = (0 + (sizeZ4/2));
 
 var box3 = new THREE.BoxGeometry( sizeX4, sizeY4, sizeZ4 );
@@ -190,9 +201,21 @@ var sizeX5 = (randomIntFromInterval(10, 50));
 var sizeY5 = (randomIntFromInterval(10, 50));
 var sizeZ5 = (randomIntFromInterval(10, 30));
 
-var posX4 = (posX3 + (randomIntFromInterval(-sizeX4,sizeX4)/2));
-var posY4 = (posY3 + (randomIntFromInterval(-sizeY4,sizeY4)/2));
-//var posZ4 = (posZ3 + (randomIntFromInterval(-sizeZ4,sizeZ4)/2));
+var roll3 = (randomIntFromInterval(0, 3));
+
+if (roll3 == 0) {
+    var posX4 = (posX3 + (randomIntFromInterval(-sizeX,sizeX)/2));
+    var posY4 = (posY3 + (randomIntFromInterval(-sizeY,sizeY)/2));
+} else if (roll3 == 1) {
+    var posX4 = (posX3 + (randomIntFromInterval(-sizeX2,sizeX2)/2));
+    var posY4 = (posY3 + (randomIntFromInterval(-sizeY2,sizeY2)/2));
+} else if (roll3 == 2) {
+    var posX4 = (posX3 + (randomIntFromInterval(-sizeX3,sizeX3)/2));
+    var posY4 = (posY3 + (randomIntFromInterval(-sizeY3,sizeY3)/2));
+} else if (roll3 == 3) {
+    var posX4 = (posX3 + (randomIntFromInterval(-sizeX4,sizeX4)/2));
+    var posY4 = (posY3 + (randomIntFromInterval(-sizeY4,sizeY4)/2));
+}
 var posZ4 = (0 + (sizeZ5/2));
 
 var box4 = new THREE.BoxGeometry( sizeX5, sizeY5, sizeZ5 );
@@ -201,45 +224,69 @@ var box4 = new THREE.Mesh( box4, material );
 scene.add( box4 );
 box4.position.set(posX4, posY4, posZ4);
 
-var sizeXY = (randomIntFromInterval(1,3));
-var sizeZ = (randomIntFromInterval(30,50));
+//smokestacks have a 1/2 chance of generating.
+var cond1 = (randomIntFromInterval(0, 1));
+//in that 1/2, cond2 controls the number of stacks generated (1-3)
+var cond2 = (randomIntFromInterval(1, 3));
 
-var posX5 = (posX4 + (randomIntFromInterval(-sizeX5,sizeX5)/2));
-var posY5 = (posY4 + (randomIntFromInterval(-sizeY5,sizeY5)/2));
-//var posZ5 = (posZ4 + (randomIntFromInterval(-sizeZ5,sizeZ5)/2));
-var posZ5 = (0 + (sizeZ/2));
+if (cond1 == 1) {
+    var sizeXY = (randomIntFromInterval(1,3));
+    var sizeZ = (randomIntFromInterval(30,50));
 
-var grid1 = new THREE.BoxGeometry( sizeXY, sizeXY, sizeZ );
-var material = new THREE.MeshBasicMaterial( { color: (Math.random() * 0xffffff) } );
-var grid1 = new THREE.Mesh( grid1, material );
-scene.add( grid1 );
-grid1.position.set(posX5, posY5, posZ5);
-
-var grid2 = new THREE.BoxGeometry( sizeXY, sizeXY, sizeZ );
-var material = new THREE.MeshBasicMaterial( { color: (Math.random() * 0xffffff) } );
-var grid2 = new THREE.Mesh( grid2, material );
-scene.add( grid2 );
-grid2.position.set((posX5 + sizeXY * 2), posY5, posZ5);
-
-var grid3 = new THREE.BoxGeometry( sizeXY, sizeXY, sizeZ );
-var material = new THREE.MeshBasicMaterial( { color: (Math.random() * 0xffffff) } );
-var grid3 = new THREE.Mesh( grid3, material );
-scene.add( grid3 );
-grid3.position.set((posX5 + sizeXY *4), posY5, posZ5);
+    var posX5 = (posX4 + (randomIntFromInterval(-sizeX5,sizeX5)/2));
+    var posY5 = (posY4 + (randomIntFromInterval(-sizeY5,sizeY5)/2));
+    var posZ5 = (0 + (sizeZ/2));
+    
+    if (cond2 == 1) {
+        var grid1 = new THREE.BoxGeometry( sizeXY, sizeXY, sizeZ );
+        var material = new THREE.MeshBasicMaterial( { color: (Math.random() * 0xffffff) } );
+        var grid1 = new THREE.Mesh( grid1, material );
+        scene.add( grid1 );
+        grid1.position.set(posX5, posY5, posZ5);
+    } else if (cond2 == 2) {
+        var grid1 = new THREE.BoxGeometry( sizeXY, sizeXY, sizeZ );
+        var material = new THREE.MeshBasicMaterial( { color: (Math.random() * 0xffffff) } );
+        var grid1 = new THREE.Mesh( grid1, material );
+        scene.add( grid1 );
+        grid1.position.set(posX5, posY5, posZ5);
+        
+        var grid2 = new THREE.BoxGeometry( sizeXY, sizeXY, sizeZ );
+        var material = new THREE.MeshBasicMaterial( { color: (Math.random() * 0xffffff) } );
+        var grid2 = new THREE.Mesh( grid2, material );
+        scene.add( grid2 );
+        grid2.position.set((posX5 + sizeXY * 2), posY5, posZ5);
+    } else if (cond2 == 3) {
+        var grid1 = new THREE.BoxGeometry( sizeXY, sizeXY, sizeZ );
+        var material = new THREE.MeshBasicMaterial( { color: (Math.random() * 0xffffff) } );
+        var grid1 = new THREE.Mesh( grid1, material );
+        scene.add( grid1 );
+        grid1.position.set(posX5, posY5, posZ5);
+        
+        var grid2 = new THREE.BoxGeometry( sizeXY, sizeXY, sizeZ );
+        var material = new THREE.MeshBasicMaterial( { color: (Math.random() * 0xffffff) } );
+        var grid2 = new THREE.Mesh( grid2, material );
+        scene.add( grid2 );
+        grid2.position.set((posX5 + sizeXY * 2), posY5, posZ5);
+        
+        var grid3 = new THREE.BoxGeometry( sizeXY, sizeXY, sizeZ );
+        var material = new THREE.MeshBasicMaterial( { color: (Math.random() * 0xffffff) } );
+        var grid3 = new THREE.Mesh( grid3, material );
+        scene.add( grid3 );
+        grid3.position.set((posX5 + sizeXY *4), posY5, posZ5);
+    }
+}
 
 //rendering
 function render() {
-     
     renderer.render( scene, camera );
     requestAnimationFrame(render);
 }
 render();
 
+//redrawing for camera manipulation
 var frameId = 0;
-
 function redraw() {
     cancelAnimationFrame(frameId);
     frameId = requestAnimationFrame(render);
 }
-
 redraw();
