@@ -64,7 +64,7 @@ var Controls = (function(Controls) {
 var renderer = new THREE.WebGLRenderer({ logarithmicDepthBuffer: true });
 var container = document.getElementById('canvas');
 renderer.setSize( window.innerWidth, window.innerHeight );
-renderer.setClearColor(0xe1fce0,1);
+renderer.setClearColor(0xf6f6fa,1);
 container.appendChild(renderer.domElement);
 
 var zNear = 1;
@@ -118,23 +118,114 @@ function randomIntFromInterval(min, max) { // min and max included
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-var sizeXY = 6;
-var sizeZ = sizeXY * .5;
+var radius = 6;
+var segments = 32;
 
 var i;
 
-for (i = 0; i < randomIntFromInterval(10,50); i++) {
-    var stack = new THREE.CylinderGeometry( sizeXY, sizeXY, sizeZ, 32 );
-    var material = new THREE.MeshBasicMaterial( { color: (Math.random() * 0xffffff) } );
+var disks = [];
+var disksX = [];
+var disksY = [];
+var disksZ = [];
+
+for (i = 0; i < randomIntFromInterval(50,100); i++) {
+    var stack = new THREE.SphereGeometry( radius, segments, segments );
+    var material = new THREE.MeshBasicMaterial( { color: 0x5e5d5e } );
     var stack = new THREE.Mesh( stack, material );
+    disks[i] = stack;
     scene.add( stack );
-    stack.position.set(0, (-i), (sizeZ/2) + i * 4);
-    stack.rotation.x = (Math.PI/2) + i/10;
+    
+    disksX[i] = 0;
+    disksY[i] = 0;
+    disksZ[i] = 0;
+    
+    stack.position.set(disksX[i], disksY[i], disksZ[i]);
+    stack.rotation.x = Math.PI/2; /*(Math.PI/2) + i/10;*/
+    stack.rotation.z = 0; /*(Math.PI/2) + i/10;*/
+}
+
+var rotationSpeed = .05;
+
+var targetPositionsX = [];
+var targetPositionsY = [];
+var targetPositionsZ = [];
+
+for (i = 0; i <= disks.length; i++) {
+    var targetPositionX = randomIntFromInterval(-100,100);
+    var targetPositionY = randomIntFromInterval(-100,100);
+    var targetPositionZ = randomIntFromInterval(-100,100);
+    targetPositionsX[i] = targetPositionX;
+    targetPositionsY[i] = targetPositionY;
+    targetPositionsZ[i] = targetPositionZ;
 }
 
 //rendering
 function render() {
     renderer.render( scene, camera );
+    
+    for (i = 0; i < disks.length; i++) {
+        
+//        if ((disksX[i] != targetPositionsX[i]) && (disksY[i] != targetPositionsY[i]) && (disksZ[i] != targetPositionsZ[i])) {
+//            disks[i].material.color.setHex( 0xffffff + (i * 5) );
+//        } else if ((disksX[i] == targetPositionsX[i]) && (disksY[i] == targetPositionsY[i]) && (disksZ[i] == targetPositionsZ[i])) {
+//            disks[i].material.color.setHex( 0xffffff );
+//        }
+        
+        if (targetPositionsX[i] > 0) {
+            if (disksX[i] < targetPositionsX[i]){
+                var speedX = .2;
+                disksX[i] += speedX;
+                disks[i].position.x = disksX[i];
+            } else {
+                disks[i].material.color.setHex( 0xffffff );
+            }
+        } else if (targetPositionsX[i] < 0) {
+            if (disksX[i] > targetPositionsX[i]){
+                var speedX = -.2;
+                disksX[i] += speedX;
+                disks[i].position.x = disksX[i];
+            } else {
+                disks[i].material.color.setHex( 0xffffff );
+            }
+        }
+        
+        if (targetPositionsY[i] > 0) {
+            if (disksY[i] < targetPositionsY[i]){
+                var speedY = .2;
+                disksY[i] += speedY;
+                disks[i].position.y = disksY[i];
+            } else {
+                disks[i].material.color.setHex( 0xffffff + 3 );
+            }
+        } else if (targetPositionsY[i] < 0) {
+            if (disksY[i] > targetPositionsY[i]){
+                var speedY = -.2;
+                disksY[i] += speedY;
+                disks[i].position.y = disksY[i];
+            } else {
+                disks[i].material.color.setHex( 0xffffff + 3 );
+            }
+        }
+        
+        if (targetPositionsZ[i] > 0) {
+            if (disksZ[i] < targetPositionsZ[i]){
+                var speedZ = .2;
+                disksZ[i] += speedZ;
+                disks[i].position.z = disksZ[i];
+            } else {
+                disks[i].material.color.setHex( 0xffffff + 6 );
+            }
+        } else if (targetPositionsZ[i] < 0) {
+            if (disksZ[i] > targetPositionsZ[i]){
+                var speedZ = -.2;
+                disksZ[i] += speedZ;
+                disks[i].position.z = disksZ[i];
+            } else {
+                disks[i].material.color.setHex( 0xffffff + 6 );
+            }
+        }
+    }
+    
     requestAnimationFrame(render);
 }
 render();

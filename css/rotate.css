@@ -1,7 +1,84 @@
-.nav{ font-size: 2.4rem;line-height: 1.5;letter-spacing: -.05rem;margin: 0;
-    background: yellow;
+.navbar-container{
+    top: 0;
+    z-index: 99 !important;
+}
+
+.helper{
+    float: left;
+    margin-top:-28px;
+    font-size: 1.23rem;
+}
+
+.navbar{
+    font-size: 2.4rem;
+    line-height: 1.5;
+    letter-spacing: -.05rem;
+    word-spacing: 1px;
+    top: 0;
+    left: 0;
+    width: 100%;
+/*    background: yellow;*/
+    position: relative;
+    padding: 0;
+    float: left;
+    /*    transform: translate(0%, -50%)*/
+}
+
+.simpleStore_viewCart{
+    margin-top: -17.5rem;
+}
+
+.drop .brand{
+    margin-left:-1000px;
+}
+
+.drop{
+    position: relative;
+    display: inline-block;
+}
+
+.drop-content{
+    margin-top: 10px;
+    display: none;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) }
+    min-width: 425px;
+    padding: 0px 0px;
+    z-index: 1;
+    font-size: 1.8rem;
+    height: 0;
+    transition: all .5s ease; 
+}
+
+.drop-content a {
+    text-decoration: none;
+    justify-content: center;
+}
+
+.drop:hover .drop-content {
+    display: block;
+    margin-left: 0rem;
+    height:200px;
+    transform: translateY(0);
+}
+
+.nav {
+/*    background: -webkit-gradient(linear,right top,left top,color-stop(50%,#000),color-stop(50%,#fff));
+    background: linear-gradient(270deg,#000 50%,#fff 0);
+    background-size: 200% 100%;
+    background-position: 100% 100%;
+    -webkit-transition: all .3s ease;*/
+    
+    
+    justify-content: left;
+    height: 100%;
+    width: 100%;
+    margin-left:-1000px;
+    padding-left: 0;
+    text-decoration: none;
+    font-size: 1.8rem;
+    display: flex;
+}
+
+/*a.nav {*/
+/*    display: none;*/
+/*}*/

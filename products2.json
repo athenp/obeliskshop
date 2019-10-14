@@ -1,0 +1,13 @@
+{
+	"products" : [
+		{
+			"name" : "Pro-Choice Fetus",
+			"price" : "8.00",
+			"options" : [
+				{ "Color" : "Black,Red,Red on Black" }
+			],
+			"image" : "./pics/FETUS.jpg",
+			"description" : "Fetus screaming for reproductive rights. Block printed on high quality paper. Limited to 20 prints."
+		}
+	]
+}

@@ -30,20 +30,35 @@
 </head>
 <body>
     
-    <div id="canvas" style='margin:0;width:100%;height:100%;top:0;left:0;overflow:hidden;opacity:1;position:relative;'></div>
-    
-    <div class="primary" style='z-index: 99;opacity:0;margin:0;width:100%;height:100%;top:0;left:0;position:absolute;'>
+    <div class="primary" style='z-index: 99;opacity:1;margin:0;width:100%;height:100%;top:0;left:0;position:absolute;'>
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container simpleStore">
         <div class="row">
-            <a class="brand" href="./rotate.html"></a>
-       <!-- <a class="nav" href="./rotate.html">About</a>
-            <a class="nav" href="./rotate.html">Contact</a>
-            <a class="nav" href="./rotate.html">Customs</a>-->
-            <a class="button button-primary u-pull-right simpleStore_viewCart">
-                <i class="fa fa-shopping-cart"></i> Cart <span class="simpleCart_total"></span>
-            </a>
+            <div class="navbar-container">
+                <div class="navbar">
+                    <div class="drop">
+                        <div class="select">
+                            <a class="brand" href="./404.html"></a>
+                        </div>
+                        <h5 class="mobile-brand">OBELISK</h5>
+                        <p class="helper">click for menu</p>
+                        <div class="drop-content">
+                            <a href="./shirts2.html">shirts</a><br>
+                            <a href="./prints.html">prints</a><br>
+                            <a href="./404.html">gen.art</a><br>
+                            <a href="./404.html">blog</a>
+                        </div>
+                    </div>
+                    <a class="nav" href="./shirts2.html">shirts</a>
+                    <a class="nav" href="./prints.html">prints</a>
+                    <a class="nav" href="./404.html">gen.art</a>
+                    <a class="nav" href="./404.html">blog</a>
+                    <a class="button button-primary u-pull-right simpleStore_viewCart">
+                        <i class="fa fa-shopping-cart"></i> Cart <span class="simpleCart_total"></span>
+                    </a>
+                </div>
+            </div>
         </div>
         <div class="simpleStore_container"></div>
         <div class="simpleStore_cart_container"></div>
@@ -149,13 +164,8 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="js/simpleCart.min.js"></script>
-<script src="js/simpleStore.min.js"></script>
+<script src="js/simpleStore2.min.js"></script>
 <script src="./js/three.min.js"></script>
-<script src="./js/rotate.js"></script>
-<script language="javascript" type="text/javascript">
-    $('#canvas').first().delay(2000).animate({'opacity':'0'},1000);
-    $('.primary').first().delay(2000).animate({'opacity':'1'},1000);
-    </script>
-<script src="js/config.js"></script>
+<script src="js/config2.js"></script>
 
 </html>
