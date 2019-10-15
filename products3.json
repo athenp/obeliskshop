@@ -2,10 +2,19 @@
 	"products" : [
 		{
 			"name" : "Balls",
+            "link" : "./balls.html",
 			"price" : "0.00",
 			"options" : [],
-			"image" : "./balls.gif",
+			"image" : "./pics/balls.gif",
 			"description" : "."
-		}
+		},
+        {
+            "name" : "Brutalist Generator",
+            "link" : "./brutalist.html",
+            "price" : "0.00",
+            "options" : [],
+            "image" : "./pics/brutalist.gif",
+            "description" : "."
+        }
 	]
 }
