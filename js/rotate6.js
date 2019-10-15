@@ -149,120 +149,122 @@ function render() {
     i = 0;
     
     function addBlock(){
-        scene.add(row1[i]);
-        scene.add(row2[i]);
-        scene.add(row3[i]);
-        scene.add(row4[i]);
-        scene.add(row5[i]);
-        scene.add(row6[i]);
-        scene.add(row7[i]);
-        scene.add(row8[i]);
-        scene.add(row9[i]);
-        scene.add(row10[i]);
-        scene.add(row11[i]);
-        
-        scene.remove(row2[1]);
-        scene.remove(row2[2]);
-        scene.remove(row2[4]);
-        scene.remove(row2[5]);
-        scene.remove(row2[10]);
-        scene.remove(row2[11]);
-        scene.remove(row2[13]);
-        scene.remove(row2[14]);
-        
-        scene.remove(row3[1]);
-        scene.remove(row3[2]);
-        scene.remove(row3[4]);
-        scene.remove(row3[5]);
-        scene.remove(row3[7]);
-        scene.remove(row3[8]);
-        scene.remove(row3[10]);
-        scene.remove(row3[11]);
-        scene.remove(row3[13]);
-        scene.remove(row3[14]);
-        
-        scene.remove(row4[1]);
-        scene.remove(row4[2]);
-        scene.remove(row4[4]);
-        scene.remove(row4[5]);
-        scene.remove(row4[7]);
-        scene.remove(row4[8]);
-        scene.remove(row4[10]);
-        scene.remove(row4[11]);
-        scene.remove(row4[13]);
-        scene.remove(row4[14]);
-        
-        scene.remove(row5[4]);
-        scene.remove(row5[5]);
-        scene.remove(row5[7]);
-        scene.remove(row5[8]);
-        scene.remove(row5[10]);
-        scene.remove(row5[11]);
-        
-        scene.remove(row6[0]);
-        scene.remove(row6[1]);
-        scene.remove(row6[2]);
-        scene.remove(row6[4]);
-        scene.remove(row6[5]);
-        scene.remove(row6[7]);
-        scene.remove(row6[8]);
-        scene.remove(row6[10]);
-        scene.remove(row6[11]);
-        scene.remove(row6[12]);
-        scene.remove(row6[13]);
-        scene.remove(row6[14]);
-        
-        scene.remove(row7[0]);
-        scene.remove(row7[1]);
-        scene.remove(row7[2]);
-        scene.remove(row7[4]);
-        scene.remove(row7[5]);
-        scene.remove(row7[7]);
-        scene.remove(row7[8]);
-        scene.remove(row7[10]);
-        scene.remove(row7[11]);
-        scene.remove(row7[12]);
-        scene.remove(row7[13]);
-        scene.remove(row7[14]);
-        
-        scene.remove(row8[0]);
-        scene.remove(row8[1]);
-        scene.remove(row8[2]);
-        scene.remove(row8[4]);
-        scene.remove(row8[5]);
-        scene.remove(row8[7]);
-        scene.remove(row8[8]);
-        scene.remove(row8[10]);
-        scene.remove(row8[11]);
-        scene.remove(row8[12]);
-        scene.remove(row8[13]);
-        scene.remove(row8[14]);
-        
-        scene.remove(row9[0]);
-        scene.remove(row9[1]);
-        scene.remove(row9[2]);
-        scene.remove(row9[4]);
-        scene.remove(row9[5]);
-        scene.remove(row9[7]);
-        scene.remove(row9[8]);
-        scene.remove(row9[10]);
-        scene.remove(row9[11]);
-        scene.remove(row9[12]);
-        scene.remove(row9[13]);
-        scene.remove(row9[14]);
-        
-        scene.remove(row10[0]);
-        scene.remove(row10[1]);
-        scene.remove(row10[2]);
-        scene.remove(row10[4]);
-        scene.remove(row10[5]);
-        scene.remove(row10[10]);
-        scene.remove(row10[11]);
-        scene.remove(row10[12]);
-        scene.remove(row10[13]);
-        scene.remove(row10[14]);
-        i++;
+        if (i < 16) {
+            scene.add(row1[i]);
+            scene.add(row2[i]);
+            scene.add(row3[i]);
+            scene.add(row4[i]);
+            scene.add(row5[i]);
+            scene.add(row6[i]);
+            scene.add(row7[i]);
+            scene.add(row8[i]);
+            scene.add(row9[i]);
+            scene.add(row10[i]);
+            scene.add(row11[i]);
+            i++;
+        }
     }
+    
+    scene.remove(row2[1]);
+    scene.remove(row2[2]);
+    scene.remove(row2[4]);
+    scene.remove(row2[5]);
+    scene.remove(row2[10]);
+    scene.remove(row2[11]);
+    scene.remove(row2[13]);
+    scene.remove(row2[14]);
+    
+    scene.remove(row3[1]);
+    scene.remove(row3[2]);
+    scene.remove(row3[4]);
+    scene.remove(row3[5]);
+    scene.remove(row3[7]);
+    scene.remove(row3[8]);
+    scene.remove(row3[10]);
+    scene.remove(row3[11]);
+    scene.remove(row3[13]);
+    scene.remove(row3[14]);
+    
+    scene.remove(row4[1]);
+    scene.remove(row4[2]);
+    scene.remove(row4[4]);
+    scene.remove(row4[5]);
+    scene.remove(row4[7]);
+    scene.remove(row4[8]);
+    scene.remove(row4[10]);
+    scene.remove(row4[11]);
+    scene.remove(row4[13]);
+    scene.remove(row4[14]);
+    
+    scene.remove(row5[4]);
+    scene.remove(row5[5]);
+    scene.remove(row5[7]);
+    scene.remove(row5[8]);
+    scene.remove(row5[10]);
+    scene.remove(row5[11]);
+    
+    scene.remove(row6[0]);
+    scene.remove(row6[1]);
+    scene.remove(row6[2]);
+    scene.remove(row6[4]);
+    scene.remove(row6[5]);
+    scene.remove(row6[7]);
+    scene.remove(row6[8]);
+    scene.remove(row6[10]);
+    scene.remove(row6[11]);
+    scene.remove(row6[12]);
+    scene.remove(row6[13]);
+    scene.remove(row6[14]);
+    
+    scene.remove(row7[0]);
+    scene.remove(row7[1]);
+    scene.remove(row7[2]);
+    scene.remove(row7[4]);
+    scene.remove(row7[5]);
+    scene.remove(row7[7]);
+    scene.remove(row7[8]);
+    scene.remove(row7[10]);
+    scene.remove(row7[11]);
+    scene.remove(row7[12]);
+    scene.remove(row7[13]);
+    scene.remove(row7[14]);
+    
+    scene.remove(row8[0]);
+    scene.remove(row8[1]);
+    scene.remove(row8[2]);
+    scene.remove(row8[4]);
+    scene.remove(row8[5]);
+    scene.remove(row8[7]);
+    scene.remove(row8[8]);
+    scene.remove(row8[10]);
+    scene.remove(row8[11]);
+    scene.remove(row8[12]);
+    scene.remove(row8[13]);
+    scene.remove(row8[14]);
+    
+    scene.remove(row9[0]);
+    scene.remove(row9[1]);
+    scene.remove(row9[2]);
+    scene.remove(row9[4]);
+    scene.remove(row9[5]);
+    scene.remove(row9[7]);
+    scene.remove(row9[8]);
+    scene.remove(row9[10]);
+    scene.remove(row9[11]);
+    scene.remove(row9[12]);
+    scene.remove(row9[13]);
+    scene.remove(row9[14]);
+    
+    scene.remove(row10[0]);
+    scene.remove(row10[1]);
+    scene.remove(row10[2]);
+    scene.remove(row10[4]);
+    scene.remove(row10[5]);
+    scene.remove(row10[10]);
+    scene.remove(row10[11]);
+    scene.remove(row10[12]);
+    scene.remove(row10[13]);
+    scene.remove(row10[14]);
     
     requestAnimationFrame(render);
 }

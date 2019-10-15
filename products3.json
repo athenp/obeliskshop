@@ -1,0 +1,11 @@
+{
+	"products" : [
+		{
+			"name" : "Balls",
+			"price" : "0.00",
+			"options" : [],
+			"image" : "./balls.gif",
+			"description" : "."
+		}
+	]
+}
