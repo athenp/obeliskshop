@@ -22,11 +22,10 @@ a.item_name{
     top: 0;
     left: 0;
     width: 100%;
-/*    background: yellow;*/
     position: relative;
     padding: 0;
     float: left;
-    /*    transform: translate(0%, -50%)*/
+    margin-bottom: -80px;
 }
 
 .simpleStore_viewCart{
@@ -84,6 +83,22 @@ a.item_name{
     display: flex;
 }
 
-/*a.nav {*/
-/*    display: none;*/
-/*}*/
+.boxes {
+    border:2px solid blue;
+    margin: 15px 0;
+    padding: 25px 18px 10px;
+}
+
+.boxes p {
+    color:white;
+    hyphens: auto;
+}
+
+.boxes h5 {
+    color:white;
+}
+
+.boxes .stamp {
+    font-size:.8em;
+    margin-bottom:0;
+}
