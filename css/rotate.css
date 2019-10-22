@@ -39,13 +39,14 @@ a.item_name{
 .drop{
     position: relative;
     display: inline-block;
+    width: 100%;
 }
 
 .drop-content{
     margin-top: 10px;
     display: none;
     position: absolute;
-    width: 550%;
+    width: 100%;
     padding: 0px 0px;
     z-index: 1;
     font-size: 1.8rem;
