@@ -2,7 +2,7 @@
 	"products" : [
 		{
 			"name" : "Pro-Choice Fetus",
-			"price" : "8.00",
+			"price" : "5.00",
 			"options" : [
 				{ "Color" : "Black,Red,Red on Black" }
 			],
@@ -11,7 +11,7 @@
 		},
         {
             "name" : "My Resume",
-            "price" : "5.00",
+            "price" : "1.00",
             "options" : [
                 { "Color" : "Black and White,Color" }
             ],

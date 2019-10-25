@@ -2,7 +2,7 @@
 	"products" : [
 		{
 			"name" : "Anti  Bike Theft",
-			"price" : "15.00",
+			"price" : "10.00",
 			"options" : [
 				{ "Size" : "Small,Medium,Large" }
 			],
@@ -11,7 +11,7 @@
 		},
 		{
 			"name" : "Liber-tee Short Sleeve",
-			"price" : "25.00",
+			"price" : "15.00",
 			"options" : [
 				{ "Size" : "Small,Medium,Large" },
 				{ "Color" : "White,Black" }
@@ -21,7 +21,7 @@
 		},
 		{
 			"name" : "Liber-tee Long Sleeve",
-			"price" : "30.00",
+			"price" : "20.00",
 			"options" : [
 				{ "Size" : "Small,Medium,Large" },
 				{ "Color" : "White,Black" }
@@ -31,7 +31,7 @@
 		},
 {
 			"name" : "Redbox",
-			"price" : "20.00",
+			"price" : "15.00",
 			"options" : [
 				{ "Size" : "Small,Medium,Large" }
 			],
@@ -40,7 +40,7 @@
 		},
 {
 			"name" : "Communist Reading Hour",
-			"price" : "20.00",
+			"price" : "15.00",
 			"options" : [
 				{ "Size" : "Small,Medium,Large" }
 			],
