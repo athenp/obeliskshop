@@ -93,8 +93,23 @@ a.item_name{
     hyphens: auto;
 }
 
-.boxes h5 {
+.boxes h5,a,strong {
     color:white;
+}
+
+.boxes h6 {
+    color: white;
+    font-size: 2.0rem;
+}
+
+.boxes blockquote {
+    color: white;
+    font-style: italic;
+}
+
+.boxes ul {
+    color:white;
+    margin-top:0px;
 }
 
 .boxes .stamp {
