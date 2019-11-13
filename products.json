@@ -20,7 +20,7 @@
 			"image" : "./pics/LIBERTEEPIC.png",
 			"description" : "I remember when someone threw a Molotov cocktail, I thought, My god, the revolution is here. The revolution is finally here!"
 		},
-{
+		{
 			"name" : "Redbox",
 			"price" : "15.00",
 			"options" : [
@@ -29,7 +29,7 @@
 			"image" : "./pics/REDBOXPIC.png",
 			"description" : "Part of the Grocery Store Checkout collection. Limited to 20 shirts. Printed on Gildan Blanks."
 		},
-{
+		{
 			"name" : "Communist Reading Hour",
 			"price" : "15.00",
 			"options" : [
