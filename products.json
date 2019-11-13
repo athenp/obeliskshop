@@ -10,24 +10,15 @@
 			"description" : "Fund my new bike, since I had the last one stolen. Printed on Gildan blanks."
 		},
 		{
-			"name" : "Liber-tee Short Sleeve",
+			"name" : "Liber-tee",
 			"price" : "15.00",
 			"options" : [
 				{ "Size" : "Small,Medium,Large" },
-				{ "Color" : "White,Black" }
+				{ "Color" : "White,Black" },
+				{ "Sleeves" : "Short,Long" }
 			],
 			"image" : "./pics/LIBERTEEPIC.png",
-			"description" : "Support the plight of marginalized people. 20% of all proceeds from this shirt are donated to charity. Printed on Gildan blanks."
-		},
-		{
-			"name" : "Liber-tee Long Sleeve",
-			"price" : "20.00",
-			"options" : [
-				{ "Size" : "Small,Medium,Large" },
-				{ "Color" : "White,Black" }
-			],
-			"image" : "./pics/LIBERTEELONGPIC.png",
-			"description" : "Support the plight of marginalized people. 20% of all proceeds from this shirt are donated to charity. Printed on Gildan blanks."
+			"description" : "I remember when someone threw a Molotov cocktail, I thought, “My god, the revolution is here. The revolution is finally here!""
 		},
 {
 			"name" : "Redbox",
